@@ -152,7 +152,7 @@ bool Adafruit_GPS::begin(uint32_t baud_or_i2caddr) {
   }
 #endif
   if (gpsHwSerial) {
-    gpsHwSerial->begin(baud_or_i2caddr, SERIAL_8N1, 14, 12);
+    gpsHwSerial->begin(baud_or_i2caddr, SERIAL_8N1, 14, 34);
   }
   if (gpsI2C) {
     gpsI2C->begin();
